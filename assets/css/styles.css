@@ -787,7 +787,7 @@ a {
 /* Pricing */
 
 .pricing {
-  margin: 65px 0;
+  margin-top: 65px;
   padding: 86px 0;
   background: #fff6ed;
 }
@@ -949,4 +949,123 @@ a {
 
 .pricing-item__item::before {
   content: url(../icon/pricing-check.svg);
+}
+
+/* Reviews */
+
+.reviews {
+  padding: 52px 0;
+}
+
+.reviews__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 44px;
+}
+
+.reviews__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1.5px solid #ffd1c4;
+  outline: none;
+  color: var(--primary-btn-color);
+  background: transparent;
+  transition: 0.25s;
+}
+
+.reviews__btn:hover {
+  color: #fff;
+  background: var(--primary-btn-color);
+  border-color: var(--primary-btn-color);
+  box-shadow: 0px 5px 27px 0px #ff5b2e4d;
+}
+
+.reviews-item {
+  display: flex;
+  align-items: center;
+  column-gap: 115px;
+}
+
+.reviews__media {
+  position: relative;
+  flex-shrink: 0;
+  width: 274px;
+  border-radius: 137px;
+}
+
+.reviews__media::after {
+  position: absolute;
+  content: "";
+  inset: auto 0 0 0;
+  height: 83%;
+  background: #ffda54;
+  border-radius: inherit;
+}
+
+.reviews__img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: inherit;
+  width: 100%;
+}
+
+.reviews-item__content {
+  width: 59%;
+}
+
+.reviews-item__quote {
+  margin-top: 24px;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.56;
+}
+
+.reviews-item__author {
+  display: inline-flex;
+  column-gap: 8px;
+  margin: 34px 0 0 8px;
+  color: #282828;
+  font-family: Sora, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.reviews-item__author::before {
+  content: "";
+  margin: auto 0;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  border-radius: 1px;
+}
+
+.reviews-dots {
+  display: flex;
+  justify-content: center;
+  column-gap: 4px;
+}
+
+.reviews__dot {
+  margin-top: 56px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-btn-color);
+}
+
+.reviews__dot:hover {
+  cursor: pointer;
+}
+
+.reviews__dot--active {
+  width: 24px;
+  background: var(--primary-btn-color);
 }
